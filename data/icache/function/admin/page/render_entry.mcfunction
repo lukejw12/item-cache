@@ -1,0 +1,1 @@
+$tellraw @s [{"text":" "},{"text":"$(id)","color":"aqua"},{"text":" "},{"text":"[>]","color":"yellow","click_event":{"action":"run_command","command":"/function icache:admin/item/expand {id:\"$(id)\"}"}}]

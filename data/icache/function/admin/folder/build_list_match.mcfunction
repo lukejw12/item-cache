@@ -1,0 +1,1 @@
+$execute if data storage icache:cache items.$(match_id){folder:"$(match_folder)"} run data modify storage icache:temp folder_items append value {id:"$(match_id)"}

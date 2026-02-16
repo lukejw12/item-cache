@@ -1,0 +1,5 @@
+execute if score @s icache.page matches 1.. run tellraw @s [{"text":"[< Prev]","color":"yellow","click_event":{"action":"run_command","command":"/trigger icache.action set 9"}}]
+scoreboard players operation #icache.has_next icache.action = #icache.total icache.action
+scoreboard players operation #icache.has_next icache.action -= #icache.end icache.action
+execute if score #icache.has_next icache.action matches 1.. run tellraw @s [{"text":"[Next >]","color":"yellow","click_event":{"action":"run_command","command":"/trigger icache.action set 10"}}]
+$tellraw @s [{"text":"[Delete Folder]","color":"red","click_event":{"action":"run_command","command":"/function icache:admin/folder/delete {folder_name:\"$(folder_name)\"}"}},{"text":"  "},{"text":"[Back]","color":"gray","click_event":{"action":"run_command","command":"/trigger icache.action set 1"}}]

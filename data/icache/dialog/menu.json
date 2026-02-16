@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {"text": "iCache Admin", "color": "gold"},
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": {"text": "Manage cached items and folders.", "color": "gray"}
+    }
+  ],
+  "columns": 2,
+  "actions": [
+    {
+      "label": {"text": "View Items"},
+      "action": {
+        "type": "run_command",
+        "command": "function icache:admin/menu"
+      }
+    },
+    {
+      "label": {"text": "View Folders"},
+      "action": {
+        "type": "run_command",
+        "command": "function icache:admin/folder/list"
+      }
+    },
+    {
+      "label": {"text": "Create Folder"},
+      "action": {
+        "type": "show_dialog",
+        "dialog": "icache:create_folder"
+      }
+    },
+    {
+      "label": {"text": "Move Item"},
+      "action": {
+        "type": "show_dialog",
+        "dialog": "icache:move_item"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": {"text": "Close"}
+  }
+}

@@ -1,0 +1,1 @@
+$tellraw @s [{"text":" "},{"text":"\uD83D\uDCC1","color":"dark_green"},{"text":" $(name)","color":"green"},{"text":" "},{"text":"[>]","color":"yellow","click_event":{"action":"run_command","command":"/trigger icache.action set $(open_trigger)"}}]

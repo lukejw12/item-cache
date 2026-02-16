@@ -1,0 +1,1 @@
+$execute if data storage icache:cache items.$(id){folder:"none"} run data modify storage icache:temp list append value {id:"$(id)"}

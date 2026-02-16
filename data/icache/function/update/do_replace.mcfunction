@@ -1,0 +1,2 @@
+$execute store result score #cache_ver icache.version run data get storage icache:cache items.$(id).version
+execute if score #item_ver icache.version < #cache_ver icache.version run function icache:update/swap with storage icache:temp

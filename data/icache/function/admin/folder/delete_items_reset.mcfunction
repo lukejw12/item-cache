@@ -1,0 +1,1 @@
+$execute if data storage icache:cache items.$(del_id){folder:"$(del_target)"} run data modify storage icache:cache items.$(del_id).folder set value "none"
