@@ -20,7 +20,7 @@
     "label": {"text": "Create"},
     "action": {
       "type": "dynamic/run_command",
-      "template": "function icache:admin/folder/create {folder_name:\"$(folder_name)\"}"
+      "template": "function icache:admin/folder/open/create {folder_name:\"$(folder_name)\"}"
     }
   },
   "no": {

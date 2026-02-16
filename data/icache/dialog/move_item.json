@@ -27,7 +27,7 @@
     "label": {"text": "Move"},
     "action": {
       "type": "dynamic/run_command",
-      "template": "function icache:admin/folder/move_item {id:\"$(id)\",folder_name:\"$(folder_name)\"}"
+      "template": "function icache:admin/folder/open/move_item {id:\"$(id)\",folder_name:\"$(folder_name)\"}"
     }
   },
   "no": {

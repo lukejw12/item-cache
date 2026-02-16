@@ -1,1 +1,0 @@
-function icache:admin/folder/list

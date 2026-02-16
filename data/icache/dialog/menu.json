@@ -13,14 +13,14 @@
       "label": {"text": "View Items"},
       "action": {
         "type": "run_command",
-        "command": "function icache:admin/menu"
+        "command": "function icache:admin/admin_utils/menu"
       }
     },
     {
       "label": {"text": "View Folders"},
       "action": {
         "type": "run_command",
-        "command": "function icache:admin/folder/list"
+        "command": "function icache:admin/folder/build/list"
       }
     },
     {
