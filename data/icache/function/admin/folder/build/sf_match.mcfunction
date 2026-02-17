@@ -1,0 +1,1 @@
+$execute if data storage icache:temp sf_check{parent:"$(folder_target)"} run data modify storage icache:temp sub_folders append from storage icache:temp sf_check

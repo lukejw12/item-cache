@@ -1,7 +1,8 @@
 data modify storage icache:temp list set value []
 data modify storage icache:temp lookup set value []
 data modify storage icache:temp folder_lookup set value []
-data modify storage icache:temp list append from storage icache:cache folder_list[]
+data modify storage icache:temp fl_scan set from storage icache:cache folder_list
+function icache:admin/page/build/filter_root
 function icache:admin/page/build/list
 scoreboard players set #icache.index icache.action 0
 scoreboard players set #icache.shown icache.action 0

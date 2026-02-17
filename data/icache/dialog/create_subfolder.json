@@ -1,21 +1,21 @@
 {
   "type": "minecraft:confirmation",
-  "title": {"text": "Create Folder", "color": "gold"},
+  "title": {"text": "Create Subfolder", "color": "gold"},
   "body": [
     {
       "type": "plain_message",
-      "contents": {"text": "Enter a name for the new folder.", "color": "gray"}
+      "contents": {"text": "Enter a name for the subfolder.", "color": "gray"}
     },
     {
       "type": "plain_message",
-      "contents": {"text": "Avoid special characters like \" and \\", "color": "dark_gray"}
+      "contents": {"text": "No spaces allowed. Use - or _ instead.", "color": "red"}
     }
   ],
   "inputs": [
     {
       "type": "minecraft:text",
       "key": "folder_name",
-      "label": "Folder Name",
+      "label": "Subfolder Name",
       "max_length": 32,
       "width": 200
     }
@@ -24,7 +24,7 @@
     "label": {"text": "Create"},
     "action": {
       "type": "dynamic/run_command",
-      "template": "function icache:admin/folder/open/create {folder_name:\"$(folder_name)\"}"
+      "template": "function icache:admin/folder/open/create_sub {folder_name:\"$(folder_name)\"}"
     }
   },
   "no": {

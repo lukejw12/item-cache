@@ -1,7 +1,7 @@
-$execute unless data storage icache:cache folders.$(from) run tellraw @s [{"text":"[iCache]","color":"gold"},{"text":" Source folder '$(from)' does not exist.","color":"red"}]
-$execute unless data storage icache:cache folders.$(from) run return 0
-$execute unless data storage icache:cache folders.$(to) run tellraw @s [{"text":"[iCache]","color":"gold"},{"text":" Destination folder '$(to)' does not exist.","color":"red"}]
-$execute unless data storage icache:cache folders.$(to) run return 0
+$execute unless data storage icache:cache folder_list[{name:"$(from)"}] run tellraw @s [{"text":"[iCache]","color":"gold"},{"text":" Source folder '$(from)' does not exist.","color":"red"}]
+$execute unless data storage icache:cache folder_list[{name:"$(from)"}] run return 0
+$execute unless data storage icache:cache folder_list[{name:"$(to)"}] run tellraw @s [{"text":"[iCache]","color":"gold"},{"text":" Destination folder '$(to)' does not exist.","color":"red"}]
+$execute unless data storage icache:cache folder_list[{name:"$(to)"}] run return 0
 $data modify storage icache:temp mm_from set value "$(from)"
 $data modify storage icache:temp mm_to set value "$(to)"
 data modify storage icache:temp mm_scan set from storage icache:cache item_list
