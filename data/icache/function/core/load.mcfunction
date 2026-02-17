@@ -9,5 +9,5 @@ execute unless data storage icache:cache folders run data modify storage icache:
 execute unless data storage icache:cache item_list run data modify storage icache:cache item_list set value []
 execute unless data storage icache:cache folder_list run data modify storage icache:cache folder_list set value []
 forceload add 0 0
-setblock 0 0 0 minecraft:barrel replace
+setblock 0 -62 0 minecraft:barrel replace
 tellraw @a [{"text":"[iCache]","color":"gold"},{"text":" Loaded successfully.","color":"green"}]

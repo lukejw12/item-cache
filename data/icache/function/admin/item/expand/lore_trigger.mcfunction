@@ -1,0 +1,1 @@
+function icache:admin/item/expand/lore with storage icache:temp last_expanded

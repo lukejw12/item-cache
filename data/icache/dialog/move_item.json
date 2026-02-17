@@ -4,17 +4,10 @@
   "body": [
     {
       "type": "plain_message",
-      "contents": {"text": "Enter the item ID and destination folder name.", "color": "gray"}
+      "contents": {"text": "Enter the destination folder name.", "color": "gray"}
     }
   ],
   "inputs": [
-    {
-      "type": "minecraft:text",
-      "key": "id",
-      "label": "Item ID",
-      "max_length": 64,
-      "width": 200
-    },
     {
       "type": "minecraft:text",
       "key": "folder_name",
@@ -27,7 +20,7 @@
     "label": {"text": "Move"},
     "action": {
       "type": "dynamic/run_command",
-      "template": "function icache:admin/folder/open/move_item {id:\"$(id)\",folder_name:\"$(folder_name)\"}"
+      "template": "function icache:admin/item/move/from_expand {folder_name:\"$(folder_name)\"}"
     }
   },
   "no": {

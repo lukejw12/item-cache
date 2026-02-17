@@ -1,4 +1,6 @@
-$data modify block 0 0 0 Items[0] set from storage icache:cache items.$(id).item
-$item replace entity @s $(slot_name) from block 0 0 0 container.0
+$data modify block 0 -62 0 Items[0] set from storage icache:cache items.$(id).item
+$item replace entity @s $(slot_name) from block 0 -62 0 container.0
 $tellraw @s [{"text":"[iCache]","color":"gold"},{"text":" Updated ","color":"green"},{"text":"$(id)","color":"aqua"},{"text":" in slot $(slot_name)","color":"gray"}]
-data modify block 0 0 0 Items set value []
+data modify block 0 -62 0 Items set value []
+
+give @p netherite_sword[custom_name=["",{"text":"Warping Witherblade","italic":false,"color":"#330099"}],lore=[["",{"text":"\"For in life all things return","color":"#006666"}],["",{"text":"to death, and in death all things","color":"#006666"}],["",{"text":"return to the shadow of ","color":"#006666"},{"text":"CENSOR","color":"#006666","obfuscated":true},{"color":"#006666","text":"\""}],[""],["",{"text":"Incendium","color":"#ff8000"}]],item_name=["",{"text":"Warping Witherblade","italic":false,"color":"#330099"}],attribute_modifiers=[{type:attack_damage,amount:9.5,slot:mainhand,operation:add_value,id:minecraft}],damage_resistant={types:"#minecraft:is_explosion"},custom_data={incendium: {item:"warping_witherblade"},icache:{id:"test_sword",version:1}},minecraft:custom_model_data={floats:[1450001.0f]}]
