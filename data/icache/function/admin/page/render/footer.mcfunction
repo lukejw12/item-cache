@@ -2,4 +2,4 @@ execute if score @s icache.page matches 1.. run tellraw @s [{"text":"[< Prev]","
 scoreboard players operation #icache.has_next icache.action = #icache.total icache.action
 scoreboard players operation #icache.has_next icache.action -= #icache.end icache.action
 execute if score #icache.has_next icache.action matches 1.. run tellraw @s [{"text":"[Next >]","color":"yellow","click_event":{"action":"run_command","command":"/trigger icache.action set 2"}}]
-tellraw @s [{"text":"[Create Folder]","color":"green","click_event":{"action":"run_command","command":"/trigger icache.action set 11"}}]
+tellraw @s [{"text":"[Create Folder]","color":"green","click_event":{"action":"run_command","command":"/trigger icache.action set 11"}},{"text":"  "},{"text":"[Mass Move]","color":"yellow","click_event":{"action":"run_command","command":"/trigger icache.action set 28"}}]

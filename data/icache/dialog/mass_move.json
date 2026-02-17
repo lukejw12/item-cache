@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {"text": "Mass Move", "color": "gold"},
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": {"text": "Move all items from one folder to another.", "color": "gray"}
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "from",
+      "label": "Source Folder",
+      "max_length": 64,
+      "width": 200
+    },
+    {
+      "type": "minecraft:text",
+      "key": "to",
+      "label": "Destination Folder",
+      "max_length": 64,
+      "width": 200
+    }
+  ],
+  "yes": {
+    "label": {"text": "Move All"},
+    "action": {
+      "type": "dynamic/run_command",
+      "template": "function icache:admin/folder/mass_move/mass_move {from:\"$(from)\",to:\"$(to)\"}"
+    }
+  },
+  "no": {
+    "label": {"text": "Cancel"}
+  }
+}

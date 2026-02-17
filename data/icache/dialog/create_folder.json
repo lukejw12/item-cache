@@ -5,6 +5,10 @@
     {
       "type": "plain_message",
       "contents": {"text": "Enter a name for the new folder.", "color": "gray"}
+    },
+    {
+      "type": "plain_message",
+      "contents": {"text": "Spaces are not allowed. Use - or _ instead.", "color": "red"}
     }
   ],
   "inputs": [
