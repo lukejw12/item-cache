@@ -8,7 +8,7 @@
     },
     {
       "type": "plain_message",
-      "contents": {"text": "No spaces allowed. Use - or _ instead.", "color": "red"}
+      "contents": {"text": "Avoid special characters like \" and \\", "color": "dark_gray"}
     }
   ],
   "inputs": [
