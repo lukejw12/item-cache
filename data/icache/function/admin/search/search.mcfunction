@@ -1,0 +1,2 @@
+$execute if data storage icache:cache items.$(keyword) run function icache:admin/search/found {keyword:"$(keyword)"}
+$execute unless data storage icache:cache items.$(keyword) run tellraw @s [{"text":"[iCache]","color":"gold"},{"text":" No item found with ID ","color":"red"},{"text":"$(keyword)","color":"aqua"},{"text":".","color":"red"}]

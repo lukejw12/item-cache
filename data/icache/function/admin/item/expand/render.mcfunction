@@ -1,3 +1,4 @@
+data modify storage icache:temp last_expanded set from storage icache:temp ex
 data modify storage icache:temp _r set from storage icache:temp last_expanded
 data modify storage icache:temp _r.lore set from storage icache:temp ex.lore
 data modify storage icache:temp _r.cdata set from storage icache:temp ex.cdata

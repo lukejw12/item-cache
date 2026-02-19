@@ -15,6 +15,8 @@ scoreboard players add #icache.end icache.action 8
 scoreboard players operation #icache.display icache.action = @s icache.page
 scoreboard players add #icache.display icache.action 1
 execute store result storage icache:temp page_num int 1 run scoreboard players get #icache.display icache.action
+execute store result score #icache.item_count icache.action run data get storage icache:cache item_list
+execute store result storage icache:temp item_count int 1 run scoreboard players get #icache.item_count icache.action
 function icache:admin/page/render/header with storage icache:temp
 function icache:admin/page/render/loop
 execute if score #icache.shown icache.action matches 0 run tellraw @s [{"text":" No items on this page.","color":"gray","italic":true}]

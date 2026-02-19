@@ -1,2 +1,2 @@
-$tellraw @s [{"text":"\n\n[iCache Admin]","color":"gold","bold":true},{"text":" — Page $(page_num)","color":"gray","bold":false}]
-tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
+$tellraw @s [{"text":"[iCache Admin]","color":"gold","bold":true},{"text":" Page $(page_num)","color":"gray","bold":false},{"text":" | ","color":"dark_gray"},{"nbt":"item_count","storage":"icache:temp","color":"yellow"},{"text":" items","color":"gray"}]
+tellraw @s [{"text":"━━━━━━━━━[","color":"dark_gray",},{"text":"Search","color":"green","click_event":{"action":"run_command","command":"/trigger icache.action set 31"}},{"text":"]━━━━━━━━━","color":"dark_gray"}]

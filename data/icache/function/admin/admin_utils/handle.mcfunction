@@ -23,6 +23,7 @@ execute if score @s icache.action matches 27 run function icache:admin/item/expa
 execute if score @s icache.action matches 28 run dialog show @s icache:mass_move
 execute if score @s icache.action matches 29 run dialog show @s icache:create_subfolder
 execute if score @s icache.action matches 30 run function icache:admin/folder/nav/back
+execute if score @s icache.action matches 31 run dialog show @s icache:search
 execute if score @s icache.action matches 100..199 run function icache:admin/item/expand/trigger
 execute if score @s icache.action matches 200..299 run function icache:admin/folder/open/trigger
 execute if score @s icache.action matches 300..399 run function icache:admin/item/delete/trigger
