@@ -40,3 +40,4 @@ execute if items entity @s armor.chest *[custom_data~{icache:{}}] run function i
 execute if items entity @s armor.legs *[custom_data~{icache:{}}] run function icache:update/replace {slot:"armor.legs"}
 execute if items entity @s armor.feet *[custom_data~{icache:{}}] run function icache:update/replace {slot:"armor.feet"}
 execute if items entity @s weapon.offhand *[custom_data~{icache:{}}] run function icache:update/replace {slot:"weapon.offhand"}
+

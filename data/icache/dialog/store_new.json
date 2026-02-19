@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {"text": "New Item", "color": "gold"},
+  "body": [
+    {
+      "type": "plain_message",
+      "contents": {"text": "This item has no iCache identifier.", "color": "red"}
+    },
+    {
+      "type": "plain_message",
+      "contents": {"text": "Enter an ID to tag and store it.", "color": "gray"}
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "id",
+      "label": "Item ID",
+      "max_length": 64,
+      "width": 200
+    }
+  ],
+  "yes": {
+    "label": {"text": "Tag & Store"},
+    "action": {
+      "type": "dynamic/run_command",
+      "template": "function icache:cache/tag_and_store {id:\"$(id)\"}"
+    }
+  },
+  "no": {
+    "label": {"text": "Cancel"}
+  }
+}

@@ -1,0 +1,2 @@
+execute store result score #icache.preserve_attr icache.version run function icache:update/references/should_preserve_attributes
+execute if score #icache.preserve_attr icache.version matches 1 if data storage icache:temp old_item.components."minecraft:attribute_modifiers" run data modify storage icache:temp new_item.components."minecraft:attribute_modifiers" set from storage icache:temp old_item.components."minecraft:attribute_modifiers"
