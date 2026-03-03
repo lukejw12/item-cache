@@ -1,0 +1,2 @@
+$data modify storage icache:cache folder_list append value {name:"$(folder_name)",type:"folder",parent:"none",display:"$(folder_name)"}
+$tellraw @s [{"text":"[iCache]","color":"gold"},{"text":" Created folder: ","color":"green"},{"text":"$(folder_name)","color":"aqua"}]

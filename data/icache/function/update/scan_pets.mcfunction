@@ -1,0 +1,1 @@
+execute as @e[type=#icache:updatable_mobs,distance=..48] run function icache:update/pet/check_equipment

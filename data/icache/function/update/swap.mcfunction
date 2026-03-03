@@ -8,6 +8,8 @@ data modify storage icache:temp old_enchants set from storage icache:temp slot.c
 execute if data storage icache:temp old_item.components."minecraft:custom_name" run data modify storage icache:temp new_item.components."minecraft:custom_name" set from storage icache:temp old_item.components."minecraft:custom_name"
 execute if data storage icache:temp old_item.components."minecraft:damage" run data modify storage icache:temp new_item.components."minecraft:damage" set from storage icache:temp old_item.components."minecraft:damage"
 execute if data storage icache:temp old_item.components."minecraft:repair_cost" run data modify storage icache:temp new_item.components."minecraft:repair_cost" set from storage icache:temp old_item.components."minecraft:repair_cost"
+execute if data storage icache:temp old_item.components."minecraft:trim" run data modify storage icache:temp new_item.components."minecraft:trim" set from storage icache:temp old_item.components."minecraft:trim"
+execute if data storage icache:temp old_item.components."minecraft:charged_projectiles" run data modify storage icache:temp new_item.components."minecraft:charged_projectiles" set from storage icache:temp old_item.components."minecraft:charged_projectiles"
 function icache:update/references/check_attributes
 function icache:update/merge_enchants
 execute in minecraft:overworld run data modify block 0 -62 0 Items[0] set from storage icache:temp new_item
