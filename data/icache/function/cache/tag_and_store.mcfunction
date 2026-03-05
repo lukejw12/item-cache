@@ -6,4 +6,5 @@ execute in minecraft:overworld run data modify block 0 -62 0 Items set value []
 execute in minecraft:overworld run data modify block 0 -62 0 Items append from storage icache:temp fix_slot
 execute in minecraft:overworld run item replace entity @s weapon.mainhand from block 0 -62 0 container.0
 execute in minecraft:overworld run data modify block 0 -62 0 Items set value []
+data modify storage icache:temp _pending_store set from storage icache:temp fix_slot
 $function icache:cache/store {id:"$(id)"}
